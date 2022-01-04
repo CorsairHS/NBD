@@ -1,0 +1,1 @@
+printjson(db.cw1.findOne({"sex": "Female", "nationality": "China"}.toArray())

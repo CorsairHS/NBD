@@ -1,0 +1,1 @@
+printjson(db.cw1.updateMany({first_name:"Antonio"},{$set:{Hobby:"pingpong"}}.toArray()))

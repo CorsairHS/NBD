@@ -1,0 +1,21 @@
+Dokument wrzucony do bazy
+204
+No Content
+Dokument pobrany z bazy i wypisany
+200
+OK
+Adrian
+Dokument zostal zmodyfikowany
+204
+No Content
+Dokument pobrany z bazy i wypisany
+200
+OK
+Maciek
+Usun dokument
+204
+No Content
+Dokument pobrany z bazy i wypisany
+404
+Object Not Found
+java.io.FileNotFoundException: http://localhost:8098/buckets/s23102/keys/Adrian

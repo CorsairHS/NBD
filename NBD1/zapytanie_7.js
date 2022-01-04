@@ -1,0 +1,1 @@
+printjson(db.cw1.deleteMany({height:{$gt:"190"}}).toArray())

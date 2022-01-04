@@ -1,0 +1,28 @@
+1.
+MATCH (n:town {name: "Darjeeling"}),(m:peak {name: "Sandakphu"})
+WITH n,m
+MATCH path = ShortestPath((n)-[*..5]-(m))
+RETURN path
+
+2.
+MATCH (n:town {name: "Darjeeling"}),(m:peak {name: "Sandakphu"})
+WITH n,m
+MATCH path = ShortestPath((n)-[*..5]-(m))
+WHERE ALL (r IN relationships(path) WHERE r.winter = "true")
+RETURN path
+
+3.
+//3a
+MATCH path = (n:town {name: "Darjeeling"})-[*..5]->(m:peak {name: "Sandakphu"})
+RETURN path,reduce(totalDistance=0, p IN relationships(path)|totalDistance + p.distance) AS Distance 
+ORDER BY Distance
+
+//3b
+MATCH (n:town {name: "Darjeeling"})-[r:twowheeler {summer:"true"}]->(m)
+RETURN n,m
+//no returns
+
+4.
+MATCH (n:Flight)-[r:ORIGIN]->(m:Airport)
+RETURN m as Airport, count(r) as Flights
+ORDER BY Flights

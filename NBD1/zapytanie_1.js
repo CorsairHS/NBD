@@ -1,0 +1,1 @@
+printjson(db.cw1.findOne({first_name:"Wayne"}).toArray())

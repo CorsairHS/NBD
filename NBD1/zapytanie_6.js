@@ -1,0 +1,16 @@
+db.cw1.insert({sex:"Male", 
+first_name:"Adrian", 
+last_name:"Zygo",
+job: "Junior Integration Developer",
+email:"s23102@pjwstk.edu.pl", 
+location:{city:"Warszawa", address:"Piekna 10"},
+description: "Życie to nie bajka", 
+height:"175", 
+weight:"86",
+birth_date:"1997-12-25T16:30:00Z",
+nationality:"Poland",
+credit:[{type:"job",
+  number:"2301302130120321",
+  currency:"PLN",
+  balance:"10000000000"
+}]})
