@@ -5,7 +5,7 @@ object cw2 {
     def dzien(day: String) = day match {
       case "Poniedziałek"|"Wtorek"|"Środa"|"Czwartek"|"Piątek" => println ("Praca")
       case "Sobota"|"Niedziela" => println ("Weekend")
-      case _ => println ("Nie ma takiego zdania")
+      case _ => println ("Nie ma takiego dnia")
     }
 
     dzien("Poniedziałek")
